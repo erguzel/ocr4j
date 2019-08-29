@@ -16,8 +16,8 @@ plugins {
 
 allprojects {
 
-    sourceCompatibility = 1.7
-    targetCompatibility = 1.7
+    //sourceCompatibility = 1.8
+    //targetCompatibility = 1.8
 }
 
 group 'com.github.erguzel'
@@ -57,6 +57,9 @@ dependencies {
     // https://mvnrepository.com/artifact/com.github.jai-imageio/jai-imageio-core
     compile group: 'com.github.jai-imageio', name: 'jai-imageio-core', version: '1.4.0'
 
+    // https://mvnrepository.com/artifact/org.apache.pdfbox/jbig2-imageio
+    compile group: 'org.apache.pdfbox', name: 'jbig2-imageio', version: '3.0.2'
+
     
     // MANUAL DEPENDENCIES
 
@@ -90,16 +93,16 @@ dependencies {
 }
 
 
-mainClassName = "OcrAppTess4jRunner"
+mainClassName = "com.erg.appool.OcrAppTess4jRunner"
 
 task jarOcrAppTess4j(type: Jar) {
 
     version '1.0-SNAPSHOT'
 
     manifest {
-        attributes 'Implementation-Title': 'convert-image-files',
+        attributes 'Implementation-Title': 'ocr-parse-image-files',
                 'Implementation-Version': version,
-                'Main-Class': 'com.erg.OcrAppTess4jRunner'
+                'Main-Class': 'com.erg.appool.OcrAppTess4jRunner'
     }
     baseName = 'ocr-app-tess4j'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
