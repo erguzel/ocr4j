@@ -6,7 +6,7 @@ import com.erg.cpaar.CmdFlag;
 import com.erg.cpaar.CmdOption;
 import com.erg.cpaar.ParserStarter;
 import com.erg.enm.LanguageTypes;
-import com.erg.exc.cmdparser.MandatoryArgumentNotProvidedException;
+import com.erg.cpaar.MandatoryArgumentNotProvidedException;
 import com.erg.exc.ocrAppTess4j.ImageFileNotSupportedException;
 import com.erg.exc.ocrAppTess4j.InputOcrFileIsNotFound;
 import com.erg.exc.ocrAppTess4j.OutputOcrDirectoryNotFound;

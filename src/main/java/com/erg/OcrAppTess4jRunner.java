@@ -1,7 +1,7 @@
 package com.erg;
 
 import com.erg.appool.OcrAppTess4jApp;
-import com.erg.exc.cmdparser.MandatoryArgumentNotProvidedException;
+import com.erg.cpaar.MandatoryArgumentNotProvidedException;
 import com.erg.exc.ocrAppTess4j.ImageFileNotSupportedException;
 import com.erg.exc.ocrAppTess4j.InputOcrFileIsNotFound;
 import com.erg.exc.ocrAppTess4j.OutputOcrDirectoryNotFound;
