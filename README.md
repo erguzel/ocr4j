@@ -28,7 +28,8 @@ Install Java Windows : https://java.com/en/download/help/windows_manual_download
 
 Install Java Linux Ubuntu : https://askubuntu.com/questions/673633/installing-java-on-ubuntu
 
- 1. Clone the project to your local
+ 1. Download latest release from below
 ```
-git clone https://github.com/erguzel/ocr-app-tess4j.giti
+git clone https://github.com/erguzel/ocr-app-tess4j.git
 ```
+ 2.  
