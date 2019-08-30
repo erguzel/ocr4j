@@ -33,9 +33,9 @@ repositories {
   
     
 
-        flatDir {
-            dirs 'dep'
-        }
+       // flatDir {
+        //    dirs 'dep'
+      //  }
 
 }
 
@@ -93,7 +93,7 @@ dependencies {
 }
 
 
-mainClassName = "com.erg.appool.OcrAppTess4jRunner"
+mainClassName = "com.erg.appool.OcrAppTess4jApp"
 
 task jarOcrAppTess4j(type: Jar) {
 
@@ -102,7 +102,7 @@ task jarOcrAppTess4j(type: Jar) {
     manifest {
         attributes 'Implementation-Title': 'ocr-parse-image-files',
                 'Implementation-Version': version,
-                'Main-Class': 'com.erg.appool.OcrAppTess4jRunner'
+                'Main-Class': 'com.erg.appool.OcrAppTess4jApp'
     }
     baseName = 'ocr-app-tess4j'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
@@ -118,7 +118,7 @@ task runOcrAppTess4j(type: JavaExec) {
     }
 
     classpath sourceSets.main.runtimeClasspath
-    main = "com.erg.OcrAppTess4jRunner"
+    main = "com.erg.appool.OcrAppTess4jApp"
     args  "-rr", "asd", "12", "bsd", "-k", "-f","arg2", "arg3"
 }
 
