@@ -28,8 +28,25 @@ Install Java Windows : https://java.com/en/download/help/windows_manual_download
 
 Install Java Linux Ubuntu : https://askubuntu.com/questions/673633/installing-java-on-ubuntu
 
- 1. Download latest release from below
+ 1. Download or clone tessdata training set to your local directory. This directory must be defined as environment variable to your system in the name TESSDATA_PREFIX.
+
 ```
-git clone https://github.com/erguzel/ocr-app-tess4j.git
+git clone git@github.com:tesseract-ocr/tessdata_best.git
+
 ```
- 2.  
+2. Assign the environment variable TESSDATA_PREFIX to the directory that contains tessdata folder. 
+
+For unix, add the line 
+
+```
+export TESSDATA_PREFIX=tessdata/download/or/clone/directory
+
+to the ~/.bash_profile file
+
+For linux
+
+to the /etc/profile file.
+
+For windows follow the instructions below;
+
+https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0
