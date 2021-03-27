@@ -17,14 +17,14 @@ public class OcrAppTess4jRunner {
         System.out.println(System.getProperty("java.vm.name"));
         System.out.println(System.getProperty("java.vm.info"));
 
-        String [] _args = {"-f", "/Users/olgunerguzel/Documents/new-job-usa/olgun-erguzel-cv.pdf", "-out", "/Users/olgunerguzel/Documents"};
+        //String [] _args = {"-f", "/Users/olgunerguzel/test-file.pdf", "-out", "/Users/olgunerguzel/Documents"};
 
 
 
 
         try {
 
-            OcrAppTess4jApp.main(_args);
+            OcrAppTess4jApp.main(args);
         }
         catch (Exception e){
             e.printStackTrace();
