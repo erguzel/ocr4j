@@ -17,10 +17,6 @@ public class OcrAppTess4jRunner {
         System.out.println(System.getProperty("java.vm.name"));
         System.out.println(System.getProperty("java.vm.info"));
 
-        //String [] _args = {"-f", "/Users/olgunerguzel/test-file.pdf", "-out", "/Users/olgunerguzel/Documents"};
-
-
-
 
         try {
 
