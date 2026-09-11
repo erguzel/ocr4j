@@ -1,3 +1,13 @@
+# ocr4j
+
+A small Java CLI that extracts text from images and PDFs using Tesseract via the Tess4J wrapper.
+
+**Status:** archived. This was a trial project for experimenting with an OCR parsing approach; it is not maintained and the build is not expected to resolve against current repositories.
+
+**Note on file deletion:** input files are deleted after parsing. By design, they are assumed to be the automatic output of an upstream process and not meant to be retained.
+
+---
+
 #
 # INTRODUCTION
 #

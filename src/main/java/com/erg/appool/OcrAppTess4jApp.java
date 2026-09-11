@@ -42,7 +42,7 @@ public class OcrAppTess4jApp {
         }
 
         app.RunTesseract();
-        app.RemoveTempFiles();
+        app.RemoveSourceFiles();
 
     }
 
@@ -139,7 +139,12 @@ public class OcrAppTess4jApp {
         System.out.println(ocrText);
     }
 
-    public void RemoveTempFiles(){
+    /**
+     * Deletes the source files once the text is in memory.
+     * By design: input files are assumed to be the automatic output of an
+     * upstream process and are not meant to be retained after parsing.
+     */
+    public void RemoveSourceFiles(){
 
 
         File fin = new File(this.INPUT_FILE);
